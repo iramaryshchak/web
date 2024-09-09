@@ -56,7 +56,6 @@ class Triangle implements Shape {
   }
 
   getArea(): number {
-    // формулу Герона для обчислення площі
     const s = (this.sideA + this.sideB + this.sideC) / 2;
     return Math.sqrt(
       s * (s - this.sideA) * (s - this.sideB) * (s - this.sideC)
@@ -88,8 +87,8 @@ for (const shape of shapes) {
   totalPerimeter += shape.getPerimeter();
 }
 
-console.log(`Total Area: ${totalArea}`);
-console.log(`Total Perimeter: ${totalPerimeter}`);
+console.log(`Area: ${totalArea}`);
+console.log(`Perimeter: ${totalPerimeter}`);
 
 for (const shape of shapes) {
   shape.scale(2);

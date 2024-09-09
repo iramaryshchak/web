@@ -1,15 +1,17 @@
 interface Animal {
   name: string;
-  age?: number;
+  age: number;
   move(): void;
+  typeofAnimal?: string;
 }
 class Cat implements Animal {
   name: string;
-  age?: number;
+  age: number;
 
-  constructor(name: string, age?: number) {
+  constructor(name: string, age: number, typeofAnimal?: string) {
     this.name = name;
     this.age = age;
+    typeofAnimal = typeofAnimal;
   }
 
   move(): void {
@@ -18,9 +20,9 @@ class Cat implements Animal {
 }
 class Bird implements Animal {
   name: string;
-  age?: number;
+  age: number;
 
-  constructor(name: string, age?: number) {
+  constructor(name: string, age: number) {
     this.name = name;
     this.age = age;
   }
@@ -35,9 +37,9 @@ class Bird implements Animal {
 }
 class Fish implements Animal {
   name: string;
-  age?: number;
+  age: number;
 
-  constructor(name: string, age?: number) {
+  constructor(name: string, age: number) {
     this.name = name;
     this.age = age;
   }
@@ -46,12 +48,11 @@ class Fish implements Animal {
     console.log(`${this.name} плаває.`);
   }
 }
-// Створюємо екземпляри класів
-const myCat = new Cat("Кет", 3);
+
+const myCat = new Cat("Кет", 3, "Домашня");
 const myBird = new Bird("Флай", 1);
 const myFish = new Fish("Немо", 2);
 
-// Викликаємо методи
 myCat.move();
 
 myBird.move();

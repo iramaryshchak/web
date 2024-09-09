@@ -1,7 +1,8 @@
 var Cat = /** @class */ (function () {
-    function Cat(name, age) {
+    function Cat(name, age, typeofAnimal) {
         this.name = name;
         this.age = age;
+        typeofAnimal = typeofAnimal;
     }
     Cat.prototype.move = function () {
         console.log("".concat(this.name, " \u0445\u043E\u0434\u0438\u0442\u044C."));
@@ -31,11 +32,9 @@ var Fish = /** @class */ (function () {
     };
     return Fish;
 }());
-// Створюємо екземпляри класів
-var myCat = new Cat("Кет", 3);
+var myCat = new Cat("Кет", 3, "Домашня");
 var myBird = new Bird("Флай", 1);
 var myFish = new Fish("Немо", 2);
-// Викликаємо методи
 myCat.move();
 myBird.move();
 myBird.sing();

@@ -99,7 +99,7 @@ class Library {
 }
 
 const book1 = new Book("Убити пересмішника", "Гарпер Лі", 281);
-const magazine1 = new Magazine("National Geographic", "Різні автори", 202);
+const magazine1 = new Magazine("Журнал", "Різні автори", 202);
 const dvd1 = new DVD("Країна мрій", "Крістофер Нолан", 148);
 
 const library = new Library();

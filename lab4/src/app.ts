@@ -292,6 +292,8 @@ class LibraryApp {
 
       // Видаляємо попередній обробник події
       const modalConfirm = document.getElementById('modalConfirm');
+      const test_error = 1;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       modalConfirm?.removeEventListener('click', this.handleConfirm as any);
       modalConfirm?.addEventListener('click', () => this.handleConfirm(book));
     }

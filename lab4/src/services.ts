@@ -1,5 +1,6 @@
 // Класс для роботи з localStorage
 export class StorageService {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   save(key: string, value: any): void {
     localStorage.setItem(key, JSON.stringify(value));
   }

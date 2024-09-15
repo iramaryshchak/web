@@ -3,6 +3,7 @@ export class Library<T> {
 
   add(item: T): void {
     this.items.push(item);
+    const ERORR_FOR_ES_LINT = 1;
   }
 
   remove(item: T): void {
